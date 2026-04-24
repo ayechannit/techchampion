@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const [leaderboard, setLeaderboard] = useState([]);
-  const [tier, setTier] = useState('Adult');
+  const [tier, setTier] = useState('Adult Tier');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -35,13 +35,13 @@ function App() {
         <h1>Typing Championship Leaderboard</h1>
         <div className="tier-selector">
           <button 
-            className={tier === 'Adult' ? 'active' : ''} 
+            className={tier === 'Adult Tier' ? 'active' : ''} 
             onClick={() => setTier('Adult Tier')}
           >
             Adult
           </button>
           <button 
-            className={tier === 'Youth' ? 'active' : ''} 
+            className={tier === 'Youth Tier' ? 'active' : ''} 
             onClick={() => setTier('Youth Tier')}
           >
             Youth

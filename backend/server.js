@@ -34,7 +34,7 @@ async function getLeaderboard(tier) {
 }
 
 app.get('/api/leaderboard', async (req, res) => {
-  const tier = req.query.tier || 'Adult'; // Default to Adult
+  const tier = req.query.tier || 'Adult Tier'; // Default to Adult Tier
   try {
     const data = await getLeaderboard(tier);
     res.json(data);
