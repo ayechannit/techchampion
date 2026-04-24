@@ -15,7 +15,8 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`http://localhost:3001/api/leaderboard?tier=${tier}`);
+      const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const response = await fetch(`${API_BASE_URL}/api/leaderboard?tier=${tier}`);
       if (!response.ok) {
         throw new Error('Failed to fetch leaderboard');
       }
