@@ -41,7 +41,7 @@ const Leaderboard = () => {
     if (data.length === 0) {
       return (
         <tr>
-          <td colSpan="5" style={{ textAlign: 'center' }}>No data available</td>
+          <td colSpan="7" style={{ textAlign: 'center' }}>No data available</td>
         </tr>
       );
     }
@@ -53,13 +53,12 @@ const Leaderboard = () => {
       return (
         <tr key={index} className={rowClass}>
           <td><span className={`rank ${rankClass}`}>{index + 1}</span></td>
-          <td>
-            <strong>{item.Player_name}</strong>
-            <small>{item.Location || 'N/A'}</small>
-          </td>
+          <td>{item.Player_name || ''}</td>
+          <td>{item.Score || 0}</td>
           <td>{item.WPM || 0}</td>
           <td>{item.Accuracy || '0%'}</td>
-          <td>{item.Score || 0}</td>
+          <td>{item.Mistake || 0}</td>
+          <td>{item.Branch_Name || item.Location || ''}</td>
         </tr>
       );
     });
@@ -114,10 +113,12 @@ const Leaderboard = () => {
               <thead>
                 <tr>
                   <th>Rank</th>
-                  <th>Player</th>
+                  <th>PLAYER</th>
+                  <th>Score</th>
                   <th>WPM</th>
                   <th>Accuracy</th>
-                  <th>Score</th>
+                  <th>Mistake</th>
+                  <th>Branch_Name</th>
                 </tr>
               </thead>
               <tbody data-tier="adult">
@@ -142,10 +143,12 @@ const Leaderboard = () => {
               <thead>
                 <tr>
                   <th>Rank</th>
-                  <th>Player</th>
+                  <th>PLAYER</th>
+                  <th>Score</th>
                   <th>WPM</th>
                   <th>Accuracy</th>
-                  <th>Score</th>
+                  <th>Mistake</th>
+                  <th>Branch_Name</th>
                 </tr>
               </thead>
               <tbody data-tier="youth">
