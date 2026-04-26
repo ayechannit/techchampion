@@ -5,6 +5,11 @@ const Leaderboard = () => {
   const [youthLeaderboard, setYouthLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showPopup, setShowPopup] = useState(() => {
+    const today = new Date();
+    const deadline = new Date('2026-05-09T00:00:00');
+    return today < deadline;
+  });
 
   useEffect(() => {
     const fetchLeaderboards = async () => {
@@ -158,6 +163,18 @@ const Leaderboard = () => {
           </div>
         </article>
       </section>
+
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <h3>Leaderboard Notice</h3>
+            <p>Heads up! 🚀 The leaderboard scores you see right now are just a test run. The real results will be revealed after May 9, 2026. Stay tuned!</p>
+            <button className="popup-close" onClick={() => setShowPopup(false)}>
+              Got it
+            </button>
+          </div>
+        </div>
+      )}
     </main>
   );
 };
