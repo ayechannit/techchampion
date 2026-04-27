@@ -178,9 +178,9 @@ p {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 400px;
   margin-bottom: 16px;
-  font-size: 4.85rem;
+  font-size: 4rem;
   line-height: 0.92;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -510,6 +510,11 @@ h3 {
 .sponsor-logo-fantech {
   width: 132px;
   height: 132px;
+}
+
+.sponsor-logo-vmax {
+  width: 180px;
+  max-height: 110px;
 }
 
 .rule-list,

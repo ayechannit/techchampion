@@ -91,10 +91,18 @@ const Leaderboard = () => {
             <strong>NYEIN Techno x IT Studio</strong>
           </div>
 
-          <div className="partner-card accessory-card">
-            <span>Accessories Prize Sponsor</span>
-            <img className="partner-fantech-logo" src="/assets/fantech-logo.jpg" alt="Fantech Myanmar logo" />
-            <strong>Fantech Myanmar</strong>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'stretch' }}>
+            <div className="partner-card accessory-card" style={{ flex: 1, alignSelf: 'stretch' }}>
+              <span>Accessories Prize Sponsor</span>
+              <img className="partner-fantech-logo" src="/assets/fantech-logo.jpg" alt="Fantech Myanmar logo" />
+              <strong>Fantech Myanmar</strong>
+            </div>
+
+            <div className="partner-card accessory-card" style={{ flex: 1, alignSelf: 'stretch' }}>
+              <span>Tournament Gear Sponsor</span>
+              <img className="partner-fantech-logo" style={{ objectFit: 'contain', background: 'transparent' }} src="/assets/vmax-logo.png" alt="VMAX Computer & IT Supplies logo" />
+              <strong>VMAX Computer & IT Supplies</strong>
+            </div>
           </div>
         </aside>
       </section>
