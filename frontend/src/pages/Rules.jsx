@@ -12,7 +12,12 @@ const Rules = () => {
           <p className="eyebrow">General Rules</p>
           <h2>အထွေထွေစည်းမျဉ်းများ</h2>
           <ol className="rule-list">
-            <li>ပြိုင်ပွဲဝင်အားလုံးသည် Typing Championship 2026 Organizer အဖွဲ့မှ သတ်မှတ်ထားသော စည်းမျဉ်းများအား လိုက်နာရမည်ဖြစ်သည်။</li>
+            <li>
+              ပြိုင်ပွဲဝင်အားလုံးသည် Typing Championship 2026 Organizer အဖွဲ့မှ သတ်မှတ်ထားသော စည်းမျဉ်းများအား လိုက်နာရမည်ဖြစ်သည်။
+              <div style={{ color: 'var(--gold)', fontWeight: 'bold', marginTop: '8px' }}>
+                * ပြိုင်ပွဲ၏ တရားမျှတမှုနှင့် ယုံကြည်မှုကို ထိန်းရှိမ်းရန်အတွက် Organizer (NYEIN Techno / IT Studio) ၏ Staff များ၊ Franchise / Branch ဝန်ထမ်းများ၊ ပြိုင်ပွဲစီမံခန့်ခွဲမှုတွင် ပါဝင်သူများ ပြိုင်ပွဲဝင်ခွင့် မပြုပါ။
+              </div>
+            </li>
             <li>ပြိုင်ပွဲအတွင်း ဖြစ်ပေါ်လာသော အဆုံးအဖြတ်များကို Organizer မှသာ နောက်ဆုံးဆုံးဖြတ်မည်ဖြစ်ပြီး မည်သည့်အကြောင်းကြောင့်မဆို ပြန်လည်ပြင်ဆင်ခွင့် မရှိပါ။</li>
           </ol>
         </article>
