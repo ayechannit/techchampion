@@ -12,8 +12,8 @@ const Leaderboard = () => {
   });
 
   useEffect(() => {
-    const fetchLeaderboards = async () => {
-      setLoading(true);
+    const fetchLeaderboards = async (isInitial = false) => {
+      if (isInitial) setLoading(true);
       setError(null);
       try {
         const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
@@ -35,11 +35,20 @@ const Leaderboard = () => {
       } catch (err) {
         setError(err.message);
       } finally {
-        setLoading(false);
+        if (isInitial) setLoading(false);
       }
     };
 
-    fetchLeaderboards();
+    // Initial fetch
+    fetchLeaderboards(true);
+
+    // Poll every 30 seconds (30000 ms)
+    const intervalId = setInterval(() => {
+      fetchLeaderboards(false);
+    }, 30000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   const renderTableRows = (data) => {
