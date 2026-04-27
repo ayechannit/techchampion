@@ -37,6 +37,10 @@ app.get('/api/leaderboard', async (req, res) => {
   const tier = req.query.tier || 'Adult Tier'; // Default to Adult Tier
   try {
     const data = await getLeaderboard(tier);
+    
+    // Set caching headers for Vercel (Cache for 30s, serve stale while updating)
+    res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate');
+    
     res.json(data);
   } catch (err) {
     res.status(500).send('Error retrieving leaderboard data');
