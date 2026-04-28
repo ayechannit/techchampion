@@ -10,7 +10,7 @@ const Location = () => {
       <section className="location-grid" aria-label="Organiser address columns">
         <article className="location-column">
           <div className="location-heading">
-            <img className="location-logo" src="/assets/nyein-techno-logo.png" alt="NYEIN Techno logo" />
+            <img className="location-logo" src="/assets/nyein-techno-logo.jpg" alt="NYEIN Techno logo" />
             <div>
               <p className="eyebrow">NT Address</p>
               <h2>NYEIN Techno</h2>

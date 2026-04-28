@@ -49,7 +49,7 @@ const About = () => {
         <article className="about-panel">
           <p className="eyebrow">Organized By</p>
           <div className="organiser-logos organiser-logos-large">
-            <img className="organiser-logo logo-nyein" src="/assets/nyein-techno-logo.png" alt="NYEIN Techno logo" />
+            <img className="organiser-logo logo-nyein" src="/assets/nyein-techno-logo.jpg" alt="NYEIN Techno logo" />
             <img className="organiser-logo logo-it" src="/assets/sponsor-logo.png" alt="IT Studio logo" />
           </div>
           <h2>NYEIN Techno x IT Studio</h2>

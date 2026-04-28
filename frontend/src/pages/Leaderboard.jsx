@@ -94,7 +94,7 @@ const Leaderboard = () => {
           <div className="partner-card">
             <span>Main Sponsor and Organised By</span>
             <div className="organiser-logos">
-              <img className="organiser-logo logo-nyein" src="/assets/nyein-techno-logo.png" alt="NYEIN Techno logo" />
+              <img className="organiser-logo logo-nyein" src="/assets/nyein-techno-logo.jpg" alt="NYEIN Techno logo" />
               <img className="organiser-logo logo-it" src="/assets/sponsor-logo.png" alt="IT Studio logo" />
             </div>
             <strong>NYEIN Techno x IT Studio</strong>

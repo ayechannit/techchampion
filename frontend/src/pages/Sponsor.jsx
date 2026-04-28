@@ -11,7 +11,7 @@ const Sponsor = () => {
         <article className="sponsor-tier sponsor-tier-main">
           <p className="eyebrow">Main Sponsor & Organizer</p>
           <div className="sponsor-logo-row">
-            <img className="sponsor-page-logo sponsor-logo-square" src="/assets/nyein-techno-logo.png" alt="NYEIN Techno logo" />
+            <img className="sponsor-page-logo sponsor-logo-square" src="/assets/nyein-techno-logo.jpg" alt="NYEIN Techno logo" />
             <img className="sponsor-page-logo sponsor-logo-wide" src="/assets/sponsor-logo.png" alt="IT Studio logo" />
           </div>
           <h2>NYEIN Techno x IT Studio</h2>
@@ -22,7 +22,7 @@ const Sponsor = () => {
           <p className="eyebrow">Prize Sponsor</p>
           <h2>Winner Prize Sponsor</h2>
           <div className="sponsor-logo-row">
-            <img className="sponsor-page-logo sponsor-logo-square" src="/assets/nyein-techno-logo.png" alt="NYEIN Techno logo" />
+            <img className="sponsor-page-logo sponsor-logo-square" src="/assets/nyein-techno-logo.jpg" alt="NYEIN Techno logo" />
             <img className="sponsor-page-logo sponsor-logo-wide" src="/assets/sponsor-logo.png" alt="IT Studio logo" />
           </div>
           <p>Winner Prize Sponsor - NYEIN Techno x IT Studio</p>

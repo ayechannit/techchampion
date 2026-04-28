@@ -14,6 +14,7 @@ const Header = () => {
       <Link className={`brand-link ${isActive('/')}`} to="/">Leaderboard</Link>
       <nav className="site-nav" aria-label="Main navigation">
         <Link className={isActive('/rules')} to="/rules">Player Rules</Link>
+        <Link className={isActive('/match-guide')} to="/match-guide">Match Guide</Link>
         <Link className={isActive('/location')} to="/location">Location</Link>
         <Link className={isActive('/sponsor')} to="/sponsor">Sponsor</Link>
         <Link className={isActive('/about')} to="/about">About</Link>

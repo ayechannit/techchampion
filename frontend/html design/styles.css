@@ -264,12 +264,12 @@ h3 {
 }
 
 .partner-card:first-child .logo-nyein {
-  width: 98px;
-  height: 98px;
+  width: 150px;
+  height: 110px;
 }
 
 .partner-card:first-child .logo-it {
-  width: 176px;
+  width: 150px;
   max-height: 110px;
 }
 
@@ -420,7 +420,7 @@ h3 {
 }
 
 .location-logo {
-  width: 64px;
+  width: 104px;
   height: 64px;
   border-radius: 8px;
   object-fit: contain;
