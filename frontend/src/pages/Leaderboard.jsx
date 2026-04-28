@@ -86,7 +86,7 @@ const Leaderboard = () => {
           <div className="title-copy">
             <p className="eyebrow">Official standings</p>
             <h1>2026 Typing Championship Leaderboard</h1>
-            <p className="hero-text">Adult Tier and Youth Tier rankings for the competition arena.</p>
+            <p className="hero-text">An ICT skill-based competition for typing speed, accuracy, focus, and digital confidence.</p>
           </div>
         </div>
 
