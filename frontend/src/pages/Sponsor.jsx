@@ -45,6 +45,15 @@ const Sponsor = () => {
           </div>
           <p>Tournament Gear Sponsor - VMAX Computer & IT Supplies</p>
         </article>
+
+        <article className="sponsor-tier">
+          <p className="eyebrow">Prize Sponsor</p>
+          <h2>Media Display Sponsor</h2>
+          <div className="sponsor-logo-row">
+            <img className="sponsor-page-logo sponsor-logo-edka" src="/assets/EDKA.png" alt="EDKA Digital logo" />
+          </div>
+          <p>Media Display Sponsor - EDKA Digital</p>
+        </article>
       </section>
     </main>
   );

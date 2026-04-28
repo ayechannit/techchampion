@@ -112,6 +112,12 @@ const Leaderboard = () => {
               <img className="partner-fantech-logo" style={{ objectFit: 'contain', background: 'transparent' }} src="/assets/vmax-logo.png" alt="VMAX Computer & IT Supplies logo" />
               <strong>VMAX Computer & IT Supplies</strong>
             </div>
+
+            <div className="partner-card accessory-card" style={{ flex: 1, alignSelf: 'stretch' }}>
+              <span>Media Display Sponsor</span>
+              <img className="partner-fantech-logo" style={{ objectFit: 'contain', background: 'transparent' }} src="/assets/EDKA.png" alt="EDKA Digital logo" />
+              <strong>EDKA Digital</strong>
+            </div>
           </div>
         </aside>
       </section>

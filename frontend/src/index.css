@@ -517,6 +517,11 @@ h3 {
   max-height: 110px;
 }
 
+.sponsor-logo-edka {
+  width: 180px;
+  max-height: 110px;
+}
+
 .rule-list,
 .rule-sublist {
   color: var(--muted);
