@@ -5,6 +5,9 @@ const MatchGuide = () => {
         <p className="eyebrow">Match Day Guide</p>
         <h1>Typing Championship 2026 Match Guide</h1>
         <p className="hero-text">ပြိုင်ပွဲဝင် Player များအတွက် Match Day လမ်းညွှန်</p>
+        <div className="rule-note" style={{ borderLeftColor: 'var(--blue)', background: 'rgba(22, 184, 255, 0.1)', marginTop: '24px', textAlign: 'center', fontWeight: '900', color: '#fff', fontSize: '1.2rem' }}>
+          🔔 ပြိုင်ပွဲ ဝင်ကြေး ပေးဆောင်ရန် လုံးဝ(လုံးဝ) မလိုပါ။
+        </div>
       </section>
 
       <section className="rules-document" aria-label="Typing Championship 2026 match guide" lang="my">
