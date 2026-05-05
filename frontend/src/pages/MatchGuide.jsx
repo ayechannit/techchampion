@@ -13,12 +13,14 @@ const MatchGuide = () => {
       <section className="rules-document" aria-label="Typing Championship 2026 match guide" lang="my">
         <article className="rule-section">
           <p className="eyebrow">01</p>
-          <h2>Match စတင်မည့်နေ့နှင့်အချိန်</h2>
+          <h2>Match ပြုလုပ်မည့် နေ့ရက်နှင့် အချိန်</h2>
           <div className="guide-copy">
-            <p>Typing Championship 2026 Match များကို အောက်ပါနေ့ရက်မှ စတင်ပြုလုပ်မည်ဖြစ်ပါသည်။</p>
+            <p>Typing Championship 2026 Match များကို အောက်ပါနေ့ရက်များတွင် ပြုလုပ်မည်ဖြစ်ပါသည်။</p>
             <ul className="rule-list">
               <li>စတင်မည့်နေ့: 9-May-2026</li>
               <li>စတင်ချိန်: မနက် 9:00 AM</li>
+              <li>ပြီးဆုံးမည့်နေ့: 30-May-2026</li>
+              <li>ပြီးဆုံးမည့်အချိန်: ညနေ 5:00 PM</li>
               <li>နေ့စဉ် Match ပြုလုပ်ချိန်: မနက် 9:00 AM မှ ညနေ 5:00 PM အထိ</li>
             </ul>
             <p style={{ marginTop: '12px' }}>Player များအနေဖြင့် မိမိဝင်ရောက်ပြိုင်ပွဲဝင်မည့် Branch သို့ အချိန်မီလာရောက်ပေးရန် လိုအပ်ပါသည်။</p>
