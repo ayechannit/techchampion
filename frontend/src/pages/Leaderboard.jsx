@@ -7,7 +7,7 @@ const Leaderboard = () => {
   const [error, setError] = useState(null);
   const [showPopup, setShowPopup] = useState(() => {
     const today = new Date();
-    const deadline = new Date('2026-05-09T00:00:00');
+    const deadline = new Date('2026-05-07T00:00:00');
     return today < deadline;
   });
 
