@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 const Leaderboard = () => {
   const [adultLeaderboard, setAdultLeaderboard] = useState([]);
   const [youthLeaderboard, setYouthLeaderboard] = useState([]);
+  const [adultTotal, setAdultTotal] = useState(0);
+  const [youthTotal, setYouthTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showPopup, setShowPopup] = useState(() => {
@@ -30,8 +32,10 @@ const Leaderboard = () => {
         const adultData = await adultRes.json();
         const youthData = await youthRes.json();
 
-        setAdultLeaderboard(adultData);
-        setYouthLeaderboard(youthData);
+        setAdultLeaderboard(adultData.players || []);
+        setAdultTotal(adultData.totalCount || 0);
+        setYouthLeaderboard(youthData.players || []);
+        setYouthTotal(youthData.totalCount || 0);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -132,6 +136,7 @@ const Leaderboard = () => {
               <p className="eyebrow">Adult Tier</p>
               <h2>Pro Division</h2>
               <p className="prize-label">Winner Prize - 3,000,000 ks</p>
+              <p className="player-count">Total Participants: {adultTotal}</p>
             </div>
             <span className="tier-badge">16 and above</span>
           </div>
@@ -162,6 +167,7 @@ const Leaderboard = () => {
               <p className="eyebrow">Youth Tier</p>
               <h2>Rising Division</h2>
               <p className="prize-label">Winner Prize - 2,000,000 ks</p>
+              <p className="player-count">Total Participants: {youthTotal}</p>
             </div>
             <span className="tier-badge">Under 16</span>
           </div>
