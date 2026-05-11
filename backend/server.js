@@ -32,7 +32,7 @@ async function getLeaderboard(tier) {
     // Get total count of players in this tier
     let countResult = await pool.request()
       .input('tierParam', sql.VarChar, tier)
-      .query('SELECT COUNT(*) as total FROM [nyeintechno_mis].[vw_Leaderboard] WHERE Tier = @tierParam');
+      .query('SELECT COUNT(*) as total FROM [nyeintechno_mis].[Player] WHERE Tier = @tierParam');
     
     return {
       players: leaderboardResult.recordset,
