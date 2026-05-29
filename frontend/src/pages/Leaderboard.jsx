@@ -12,6 +12,7 @@ const Leaderboard = () => {
     const deadline = new Date('2026-05-07T00:00:00');
     return today < deadline;
   });
+  const [showWinners, setShowWinners] = useState(true);
 
   useEffect(() => {
     const fetchLeaderboards = async (isInitial = false) => {
@@ -91,6 +92,13 @@ const Leaderboard = () => {
             <p className="eyebrow">Official standings</p>
             <h1>2026 Typing Championship Leaderboard</h1>
             <p className="hero-text">An ICT skill-based competition for typing speed, accuracy, focus, and digital confidence.</p>
+            <button 
+              className="popup-close" 
+              style={{ marginTop: '20px', background: 'var(--gold)', color: '#000', border: 'none' }}
+              onClick={() => setShowWinners(true)}
+            >
+              🏆 View Championship Top 3
+            </button>
           </div>
         </div>
 
@@ -200,6 +208,62 @@ const Leaderboard = () => {
             <p>Heads up! 🚀 The leaderboard scores you see right now are just a test run. The real results will be revealed after May 9, 2026. Stay tuned!</p>
             <button className="popup-close" onClick={() => setShowPopup(false)}>
               Got it
+            </button>
+          </div>
+        </div>
+      )}
+      {showWinners && (
+        <div className="popup-overlay" onClick={() => setShowWinners(false)}>
+          <div className="popup-content winners-popup" onClick={(e) => e.stopPropagation()}>
+            <div className="winners-header">
+              <h2>🏆 Championship Top 3</h2>
+              <p>Celebrating the top performers of the 2026 Typing Championship</p>
+            </div>
+
+            <div className="winners-grid">
+              <div className="winner-tier-card adult-winners">
+                <h3>Adult Tier</h3>
+                {adultLeaderboard.slice(0, 3).map((player, index) => (
+                  <div key={index} className="winner-item">
+                    <div className="winner-rank">
+                      <span className={`rank ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}>
+                        {index + 1}
+                      </span>
+                    </div>
+                    <div className="winner-info">
+                      <span className="winner-name">{player.Player_name}</span>
+                      <span className="winner-stats">
+                        Score: <strong>{player.Score}</strong> | WPM: <strong>{player.WPM}</strong>
+                      </span>
+                    </div>
+                  </div>
+                ))}
+                {adultLeaderboard.length === 0 && <p>No results yet</p>}
+              </div>
+
+              <div className="winner-tier-card youth-winners">
+                <h3>Youth Tier</h3>
+                {youthLeaderboard.slice(0, 3).map((player, index) => (
+                  <div key={index} className="winner-item">
+                    <div className="winner-rank">
+                      <span className={`rank ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}>
+                        {index + 1}
+                      </span>
+                    </div>
+                    <div className="winner-info">
+                      <span className="winner-name">{player.Player_name}</span>
+                      <span className="winner-stats">
+                        Score: <strong>{player.Score}</strong> | WPM: <strong>{player.WPM}</strong>
+                      </span>
+                    </div>
+                  </div>
+                ))}
+                {youthLeaderboard.length === 0 && <p>No results yet</p>}
+              </div>
+            </div>
+
+            <button className="popup-close" onClick={() => setShowWinners(false)}>
+              Close Results
             </button>
           </div>
         </div>
