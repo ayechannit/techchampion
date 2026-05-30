@@ -97,7 +97,7 @@ const Leaderboard = () => {
               style={{ marginTop: '20px', background: 'var(--gold)', color: '#000', border: 'none' }}
               onClick={() => setShowWinners(true)}
             >
-              🏆 View Championship Top 3
+              🏆 View Championship Winners
             </button>
           </div>
         </div>
@@ -216,7 +216,7 @@ const Leaderboard = () => {
         <div className="popup-overlay" onClick={() => setShowWinners(false)}>
           <div className="popup-content winners-popup" onClick={(e) => e.stopPropagation()}>
             <div className="winners-header">
-              <h2>🏆 Championship Top 3</h2>
+              <h2>🏆 Championship Winners</h2>
               <p>Celebrating the top performers of the 2026 Typing Championship</p>
             </div>
 
