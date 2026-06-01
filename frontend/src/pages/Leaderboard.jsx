@@ -46,14 +46,6 @@ const Leaderboard = () => {
 
     // Initial fetch
     fetchLeaderboards(true);
-
-    // Poll every 30 seconds (30000 ms)
-    const intervalId = setInterval(() => {
-      fetchLeaderboards(false);
-    }, 30000);
-
-    // Cleanup interval on component unmount
-    return () => clearInterval(intervalId);
   }, []);
 
   const renderTableRows = (data) => {
